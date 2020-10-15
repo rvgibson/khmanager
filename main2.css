@@ -1,0 +1,123 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000000;
+}
+
+
+header p {
+    line-height: .75em;
+}
+
+ #headerinfo{
+    float: right;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+}
+
+nav ul {
+    list-style-type: none;  
+}
+
+nav li {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff;
+}
+
+nav a {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: gray;
+}
+
+.dropdown-content {
+    visibility: hidden;
+}
+
+div {
+    margin: 0px 5px 15px 5px;
+    padding: 0px 7px;
+}
+
+
+/*******************************PARTY********************************/
+.charSelectBox {
+    margin-right: auto;
+    margin-left:auto;
+    display: inline-block;
+    width: 30%;
+      
+}
+.charSelectBox a:hover {
+    border: 3px solid white;
+    background: lightgrey;
+}
+
+.charSelectBox a {
+    display: block;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: black;
+    border: 3px solid black;
+    height: 200px;
+}
+
+
+/**********************************ABILITIES**********************************/
+
+
+
+#abilityDesc, #itemDesc {
+    height: auto;
+    max-height: 600px;
+    width:100%;
+    overflow:auto;
+    padding: 25px 10px;
+    margin: 25px;
+    float: right;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+}
+
+
+#abilityList a {
+    display: inline-block;
+}
+.clickable:hover {
+    background-color: gray;
+}
+
+/*****************************************ITEMS**************************************/
+#inventorycol {
+    float: right;
+    width: 300px;
+   
+}
+
+#inventory {
+     height: 235px;
+    overflow: auto;
+}
+
+#itemList {
+    height: 300px;
+    overflow: auto;
+}
+#itemDesc {
+    width: 300px;
+}
+
+#itemList table {
+    width: 300px;
+}

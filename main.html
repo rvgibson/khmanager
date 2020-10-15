@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <header>
+                    <ul class="loginout">
+                    <li><a href="index.php?action=gotologin"><?php if (isset($_SESSION['CurrentUser'])){echo "user: " . $_SESSION['CurrentUser']->getUsername();} else {echo "Login";} ?></a></li>
+                    <li><a href="index.php?action=logout">Logout</a></li></ul>
+                    <img src="ImageElements/MarkOfMastery.png" alt="Mark of Mastery Symbol" class="MoM">
+        </header>
+        <section class="container">
+             <nav>
+                <ul>
+                    <li><a href="index.php?action=main">Home</a></li>
+                    <li><a href="index.php?action=items">Items</a></li>
+                    <li><a href="index.php?action=abilities">Abilities</a></li>
+                    <li><a href="index.php?action=party">Character Sheets</a></li>
+                    <li><a href="index.php?action=enemies">Enemies</a></li>
+                  
+                </ul>
+            </nav>
+            <section class="main"><p>CONTENT</p><p></p></section>
+        </section>
+        <section class ="infobar"></section>
+    </body>
+</html>
