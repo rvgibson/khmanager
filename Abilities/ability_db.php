@@ -1,8 +1,12 @@
 <?php 
 require_once('ability.php');
-$dsn = 'mysql:host=184.154.206.12;dbname=pidrawsc_khgame';
-$username = 'pidrawsc_khadmin';
-$password = 'qHbdc62MR34Tbjx';
+//$dsn = 'mysql:host=184.154.206.12;dbname=pidrawsc_khgame';
+//$username = 'pidrawsc_khadmin';
+//$password = 'qHbdc62MR34Tbjx';
+
+$dsn = 'mysql:host=localhost;dbname=khgame';
+$username = 'root';
+$password = '';
 
 try {
     $db = new PDO($dsn, $username, $password);
@@ -26,7 +30,7 @@ function get_all_abilities() {
 	foreach($abilityRow as $ability){
 		$ability;
                 $tags = get_tags($ability['abl_id']);
-		$abilities[$ability['abl_id']] = new ability(   $ability['abl_id'],
+		$abilities[$ability['abl_id']] = new ability($ability['abl_id'],
                                                             $ability['tree'],
                                                             $ability['tier'],
                                                             $ability['name'],
@@ -40,6 +44,8 @@ function get_all_abilities() {
                                                             $ability['fort_tgt'],
                                                             $ability['damage_formula'],
                                                             $ability['flavortext'],
+                                                            $ability['ap_cost'],
+                                                            $ability['lux_cost'],
                                                             $ability['equipped']="NULL");
 	}
 
