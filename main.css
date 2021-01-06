@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#abilityList {
+    overflow-y: auto;
+    max-height: 70;
+}
+
+.pointbar {
+    display: flex;
+    height: 15px;
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px;
+    font-size: 90%;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    justify-content: space-between;
+    
+}
+
+.pointbar span {
+    padding-top: 1%; 
+    text-shadow: 2px 2px 0 #FFF,
+        -1px -1px 0 #FFF,
+        1px -1px 0 #FFF,
+        -1px 1px 0 #FFF,
+        1px 1px 0 #FFF;
+}
+
+#lifebar {
+    background-color: lightgreen;
+    border-color: seagreen;
+}
+
+#mpbar {
+    background-color: dodgerblue;
+    border-color: darkslateblue;
+}
+
+#focusbar {
+    background-color: yellow;
+    border-color: goldenrod;
+}
+
+#defbar {
+    background-color: plum;
+    border-color: purple;
+}
+
+#characterHeader {
+    background-color: lightgray;
+}
+
+
+
+#valuechangers div {
+display: flex;
+justify-content: space-between;
+min-width: 100%;
+margin-bottom: 2%;
+margin-top: 2%;
+}
+
+.addval, .lessval {
+   height: 20px;
+   width: 20px; 
+}
+
+.addval {  
+    background-color: green;
+}
+.lessval {
+    background-color: red;
+}
+
+.valuechangerfield {
+    max-width: 5em;
+}
+
+#statusbox, #keybladebox {
+    min-height: 75%;
+    width: 100%;
+    border: 1px solid gray;
+}
+
+#statussymbols {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#statussymbols img {
+    opacity: .3;
+    height: 30px;
+    width: 30px;
+}
+.statussymbolblock {
+    padding: .25em .5em;
+}
+
+.statuscounter {
+    padding: 3px 0px;
+}
+
+.statuscounter input{
+    max-width: 2em;
+    justify-content: flex-start;
+}
+
+.defensebox {
+    display: flex;
+    font-size: 2em;
+    justify-content: space-around;
+}
+
+.defenseblock {
+    width: 15%;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    padding: 3%;
+    text-align: center;
+}
